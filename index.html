@@ -243,100 +243,505 @@ footer .st{font-family:'Noto Serif JP',serif;font-weight:200;font-size:1.2rem;co
 <script>
 
 const TRANS = [
-{ // Sommaire
-    fr:["SOMMAIRE","page 5 — La leçon de dessin","page 15 — La leçon de ténèbres","page 25 — La leçon de morale","page 35 — La leçon de logique cosmologique"],
-    zh:["目次","第5頁 — 素描課","第15頁 — 暗影課","第25頁 — 道德課","第35頁 — 宇宙邏輯課"],
-    en:["TABLE OF CONTENTS","page 5 — The drawing lesson","page 15 — The lesson of darkness","page 25 — The lesson of morality","page 35 — The lesson of cosmological logic"]
+  {
+    "fr": [
+      "SOMMAIRE",
+      "page 5 — La leçon de dessin",
+      "page 15 — La leçon de ténèbres",
+      "page 25 — La leçon de morale",
+      "page 35 — La leçon de logique cosmologique"
+    ],
+    "zh": [
+      "目次",
+      "第5頁 — 素描課",
+      "第15頁 — 暗影課",
+      "第25頁 — 道德課",
+      "第35頁 — 宇宙邏輯課"
+    ],
+    "en": [
+      "TABLE OF CONTENTS",
+      "page 5 — The drawing lesson",
+      "page 15 — The lesson of darkness",
+      "page 25 — The lesson of morality",
+      "page 35 — The lesson of cosmological logic"
+    ]
   },
-{ // p.5
-    fr:["Le papier est rugueux, dur.","Et dans cette large pièce lumineuse les feuilles d'acanthe, les frises, les styles et les moulages s'accumulent, pendus en grappes fertiles sur des grilles dans les hauteurs ;","en bas les bureaux et les élèves alignés.","Chacun d'eux regarde un plâtre, simplement posé devant lui, avec une lampe brute l'éclairant à quarante-cinq degrés, afin de révéler tous les reliefs, toutes les ombres portées de l'objet blanc, fragile et délicat.","Les crayons se taillent et les souffles se"],
-    zh:["紙張粗糙、堅硬。","在這間寬敞明亮的房間裡，茛苕葉飾、簷壁飾帶、各種樣式和石膏模型層層堆積，像豐碩的串簇般懸掛在高處的鐵架上；","下方是一排排的桌子和整齊坐好的學生。","他們每個人注視著一件石膏像，就這樣簡單地擺在面前，一盞粗獷的燈以四十五度角照射著它，為的是顯現所有的浮凸、所有投射在這白色、脆弱而精緻的物體上的陰影。","鉛筆被削尖，呼吸聲漸漸"],
-    en:["The paper is rough, hard.","And in this large, luminous room, acanthus leaves, friezes, styluses and plaster casts accumulate, hanging in fertile clusters on grilles up high;","below, the desks and the students lined up.","Each of them gazes at a plaster cast, simply placed before them, with a bare lamp illuminating it at forty-five degrees, to reveal every relief, every shadow cast by the white, fragile and delicate object.","The pencils are sharpened and the breaths"]
+  {
+    "fr": [
+      "Le papier est rugueux, dur.",
+      "Et dans cette large pièce lumineuse les feuilles d'acanthe, les frises, les styles et les moulages s'accumulent, pendus en grappes fertiles sur des grilles dans les hauteurs ;",
+      "en bas les bureaux et les élèves alignés.",
+      "Chacun d'eux regarde un plâtre, simplement posé devant lui, avec une lampe brute l'éclairant à quarante-cinq degrés, afin de révéler tous les reliefs, toutes les ombres portées de l'objet blanc, fragile et délicat.",
+      "Les crayons se taillent et les souffles se"
+    ],
+    "zh": [
+      "紙張粗糙、堅硬。",
+      "在這間寬敞明亮的房間裡，茛苕葉飾、簷壁飾帶、各種樣式和石膏模型層層堆積，像豐碩的串簇般懸掛在高處的鐵架上；",
+      "下方是一排排的桌子和整齊坐好的學生。",
+      "他們每個人注視著一件石膏像，就這樣簡單地擺在面前，一盞粗獷的燈以四十五度角照射著它，為的是顯現所有的浮凸、所有投射在這白色、脆弱而精緻的物體上的陰影。",
+      "鉛筆被削尖，呼吸聲漸漸"
+    ],
+    "en": [
+      "The paper is rough, hard.",
+      "And in this large, luminous room, acanthus leaves, friezes, styluses and plaster casts accumulate, hanging in fertile clusters on grilles up high;",
+      "below, the desks and the students lined up.",
+      "Each of them gazes at a plaster cast, simply placed before them, with a bare lamp illuminating it at forty-five degrees, to reveal every relief, every shadow cast by the white, fragile and delicate object.",
+      "The pencils are sharpened and the breaths"
+    ]
   },
-{ // p.6
-    fr:["calment.","La dizaine de personnes réunies autour de ces ornements précis en a fini avec les amabilités, avec le monde extérieur.","Les regards s'affûtent et se ferment, les sourires deviennent parfois plus discrets, préludes d'une moue dont la plupart de mes congénères commence à orner leur faciès.","Certains ont déjà commencé. Avec habileté, leur main se déplace devant eux. Un geste automatique, précis et fluide, que j'envie.","C'est dur de commencer à avancer.","Pourtant j'ai une heure.","Une heure pour voir.","Le papier est rugueux et les poussières du monde s'y accrochent.","Chaque anfractuosité est un appel au sombre, au gris et aux profondeurs."],
-    zh:["平靜了下來。","圍繞著這些精緻裝飾聚集的十來個人，已經結束了寒暄，與外面的世界告別。","目光變得銳利而封閉，微笑時而變得更加含蓄，成為一種嘟嘴的前奏——我大多數的同伴已經開始用這表情裝飾他們的面孔。","有些人已經開始畫了。他們的手在面前靈巧地移動。一個自動的、精準而流暢的動作，令我羨慕。","要開始前進是困難的。","然而我有一個小時。","一個小時來觀看。","紙張粗糙，世間的塵埃附著其上。","每一個凹陷都是對黑暗、灰色和深處的召喚。"],
-    en:["grow calm.","The dozen or so people gathered around these precise ornaments have finished with pleasantries, with the outside world.","Gazes sharpen and close off, smiles sometimes become more discreet, preludes to a pout that most of my peers begin adorning their faces with.","Some have already begun. With skill, their hand moves before them. An automatic gesture, precise and fluid, that I envy.","It is hard to begin moving forward.","Yet I have one hour.","One hour to see.","The paper is rough and the dust of the world clings to it.","Each crevice is a call to darkness, to grey and to the depths."]
+  {
+    "fr": [
+      "calment.",
+      "La dizaine de personnes réunies autour de ces ornements précis en a fini avec les amabilités, avec le monde extérieur.",
+      "Les regards s'affûtent et se ferment, les sourires deviennent parfois plus discrets, préludes d'une moue dont la plupart de mes congénères commence à orner leur faciès.",
+      "Certains ont déjà commencé. Avec habileté, leur main se déplace devant eux. Un geste automatique, précis et fluide, que j'envie.",
+      "C'est dur de commencer à avancer.",
+      "Pourtant j'ai une heure.",
+      "Une heure pour voir.",
+      "Le papier est rugueux et les poussières du monde s'y accrochent.",
+      "Chaque anfractuosité est un appel au sombre, au gris et aux profondeurs."
+    ],
+    "zh": [
+      "平靜了下來。",
+      "圍繞著這些精緻裝飾聚集的十來個人，已經結束了寒暄，與外面的世界告別。",
+      "目光變得銳利而封閉，微笑時而變得更加含蓄，成為一種嘟嘴的前奏——我大多數的同伴已經開始用這表情裝飾他們的面孔。",
+      "有些人已經開始畫了。他們的手在面前靈巧地移動。一個自動的、精準而流暢的動作，令我羨慕。",
+      "要開始前進是困難的。",
+      "然而我有一個小時。",
+      "一個小時來觀看。",
+      "紙張粗糙，世間的塵埃附著其上。",
+      "每一個凹陷都是對黑暗、灰色和深處的召喚。"
+    ],
+    "en": [
+      "grow calm.",
+      "The dozen or so people gathered around these precise ornaments have finished with pleasantries, with the outside world.",
+      "Gazes sharpen and close off, smiles sometimes become more discreet, preludes to a pout that most of my peers begin adorning their faces with.",
+      "Some have already begun. With skill, their hand moves before them. An automatic gesture, precise and fluid, that I envy.",
+      "It is hard to begin moving forward.",
+      "Yet I have one hour.",
+      "One hour to see.",
+      "The paper is rough and the dust of the world clings to it.",
+      "Each crevice is a call to darkness, to grey and to the depths."
+    ]
   },
-{ // p.7
-    fr:["geste est contraint, la dynamique est rompue, chaotique.","Et les points discontinus se suivent tel le sillon de l'araire dans un champ mal dégrossi.","Même le blanc est grisé, l'ombre de chaque nodule de fibre se laisse deviner, jouxtant l'autre sans la recouvrir, laissant une aire blanche, attaquée par la lumière.","Les rayons du soleil se diffractent en autant de particules, de moellons, comme sur une neige bosselée, fondante et chaude.","Je ne vois plus la ligne, j'ai perdu mon regard dans ces collines désertiques et blanches.","Je m'égare aux creux des vallons, serpentant de l'un à l'autre, en espérant découvrir un horizon, une direction claire.","Derrière moi mes traces me paraissent sales. Des taches de pétrole sur un glacier.","Devant, ce nuage, ce brouillard gomme les distances. Tout est com-"],
-    zh:["動作是受限的，動態被打破，變得混亂。","不連續的點彼此相隨，像耕犁在一片粗糙田地裡留下的犁溝。","就連白色也帶著灰，每一個纖維結節的陰影都隱約可見，彼此相鄰卻不覆蓋，留下一片被光線侵襲的白色區域。","陽光折射成無數微粒、碎石，如同落在凹凸不平、融化而溫熱的雪地上。","我再也看不見線條了，我的目光迷失在這些荒蕪的白色丘陵中。","我在山谷的凹處迷了路，蜿蜒地從一處到另一處，希望能發現一條地平線、一個清晰的方向。","在我身後，我的痕跡看起來很髒。像冰川上的油漬。","前方，這片雲霧、這團迷霧抹去了距離。一切都被壓"],
-    en:["gesture is constrained, the dynamic is broken, chaotic.","And the discontinuous dots follow one another like the furrow of a plough in a roughly cleared field.","Even the white is greyed, the shadow of each fibre nodule lets itself be guessed, adjoining the other without covering it, leaving a white area, attacked by light.","The rays of the sun diffract into as many particles, rubble stones, as on a bumpy, melting and warm snow.","I no longer see the line, I have lost my gaze in these desert-white hills.","I wander in the hollows of the valleys, winding from one to the other, hoping to discover a horizon, a clear direction.","Behind me my traces seem dirty. Oil stains on a glacier.","Ahead, this cloud, this fog erases the distances. Everything is com-"]
+  {
+    "fr": [
+      "geste est contraint, la dynamique est rompue, chaotique.",
+      "Et les points discontinus se suivent tel le sillon de l'araire dans un champ mal dégrossi.",
+      "Même le blanc est grisé, l'ombre de chaque nodule de fibre se laisse deviner, jouxtant l'autre sans la recouvrir, laissant une aire blanche, attaquée par la lumière.",
+      "Les rayons du soleil se diffractent en autant de particules, de moellons, comme sur une neige bosselée, fondante et chaude.",
+      "Je ne vois plus la ligne, j'ai perdu mon regard dans ces collines désertiques et blanches.",
+      "Je m'égare aux creux des vallons, serpentant de l'un à l'autre, en espérant découvrir un horizon, une direction claire.",
+      "Derrière moi mes traces me paraissent sales. Des taches de pétrole sur un glacier.",
+      "Devant, ce nuage, ce brouillard gomme les distances. Tout est com-"
+    ],
+    "zh": [
+      "動作是受限的，動態被打破，變得混亂。",
+      "不連續的點彼此相隨，像耕犁在一片粗糙田地裡留下的犁溝。",
+      "就連白色也帶著灰，每一個纖維結節的陰影都隱約可見，彼此相鄰卻不覆蓋，留下一片被光線侵襲的白色區域。",
+      "陽光折射成無數微粒、碎石，如同落在凹凸不平、融化而溫熱的雪地上。",
+      "我再也看不見線條了，我的目光迷失在這些荒蕪的白色丘陵中。",
+      "我在山谷的凹處迷了路，蜿蜒地從一處到另一處，希望能發現一條地平線、一個清晰的方向。",
+      "在我身後，我的痕跡看起來很髒。像冰川上的油漬。",
+      "前方，這片雲霧、這團迷霧抹去了距離。一切都被壓"
+    ],
+    "en": [
+      "gesture is constrained, the dynamic is broken, chaotic.",
+      "And the discontinuous dots follow one another like the furrow of a plough in a roughly cleared field.",
+      "Even the white is greyed, the shadow of each fibre nodule lets itself be guessed, adjoining the other without covering it, leaving a white area, attacked by light.",
+      "The rays of the sun diffract into as many particles, rubble stones, as on a bumpy, melting and warm snow.",
+      "I no longer see the line, I have lost my gaze in these desert-white hills.",
+      "I wander in the hollows of the valleys, winding from one to the other, hoping to discover a horizon, a clear direction.",
+      "Behind me my traces seem dirty. Oil stains on a glacier.",
+      "Ahead, this cloud, this fog erases the distances. Everything is com-"
+    ]
   },
-{ // p.8
-    fr:["pacté à coups de focale trop courte. Mais il faut aller de l'avant dans le grand blanc sans espace et peut-être tomber.","J'y vais à tâtons, recule plusieurs fois, sur un seul plan.","Fermant les yeux pour retrouver en moi le volume, j'ose une direction.","La trace est noire courbe, humide, aux contours poreux. Je ne lui fais pas confiance encore.","Ces bords sont flous et sans limite.","On y décèle à la fois mon hésitation et la structure parcellaire de son support. Ce n'est pas franc — planche pourrie.","Je poursuis néanmoins. Et tente d'affermir ma trajectoire, de densifier le noir qui me guide, sans y laisser d'interstices chassieux.","Il me faut faire demi-tour souvent, repasser au même endroit pour creuser le sentier. Avec ma"],
-    zh:["縮在過短的焦距之中。但必須在這片沒有空間的巨大白色中前行，也許會跌倒。","我摸索著前進，在同一個平面上後退了好幾次。","閉上眼睛，在內心找回體積感，我鼓起勇氣選擇一個方向。","痕跡是黑色的、彎曲的、潮濕的，輪廓多孔。我還不信任它。","這些邊緣模糊且毫無界限。","從中可以同時察覺我的猶豫和其載體的碎片化結構。這不夠坦率——腐朽的木板。","我仍然繼續。並試圖鞏固我的軌跡，加密引導我的黑色，不在其中留下眵目的縫隙。","我必須經常掉頭，在同一個地方反覆經過，以便挖出小徑。用我"],
-    en:["pressed by too short a focal length. But one must go forward into the great white without space and perhaps fall.","I go groping, retreating several times, on a single plane.","Closing my eyes to find volume within me again, I dare a direction.","The mark is black, curved, damp, with porous contours. I do not trust it yet.","These edges are blurry and without limit.","One can detect both my hesitation and the fragmented structure of its support. It is not frank — rotten plank.","I continue nonetheless. And attempt to firm up my trajectory, to densify the black that guides me, without leaving crusty interstices.","I must turn back often, go over the same spot to carve the path. With my"]
+  {
+    "fr": [
+      "pacté à coups de focale trop courte. Mais il faut aller de l'avant dans le grand blanc sans espace et peut-être tomber.",
+      "J'y vais à tâtons, recule plusieurs fois, sur un seul plan.",
+      "Fermant les yeux pour retrouver en moi le volume, j'ose une direction.",
+      "La trace est noire courbe, humide, aux contours poreux. Je ne lui fais pas confiance encore.",
+      "Ces bords sont flous et sans limite.",
+      "On y décèle à la fois mon hésitation et la structure parcellaire de son support. Ce n'est pas franc — planche pourrie.",
+      "Je poursuis néanmoins. Et tente d'affermir ma trajectoire, de densifier le noir qui me guide, sans y laisser d'interstices chassieux.",
+      "Il me faut faire demi-tour souvent, repasser au même endroit pour creuser le sentier. Avec ma"
+    ],
+    "zh": [
+      "縮在過短的焦距之中。但必須在這片沒有空間的巨大白色中前行，也許會跌倒。",
+      "我摸索著前進，在同一個平面上後退了好幾次。",
+      "閉上眼睛，在內心找回體積感，我鼓起勇氣選擇一個方向。",
+      "痕跡是黑色的、彎曲的、潮濕的，輪廓多孔。我還不信任它。",
+      "這些邊緣模糊且毫無界限。",
+      "從中可以同時察覺我的猶豫和其載體的碎片化結構。這不夠坦率——腐朽的木板。",
+      "我仍然繼續。並試圖鞏固我的軌跡，加密引導我的黑色，不在其中留下眵目的縫隙。",
+      "我必須經常掉頭，在同一個地方反覆經過，以便挖出小徑。用我"
+    ],
+    "en": [
+      "pressed by too short a focal length. But one must go forward into the great white without space and perhaps fall.",
+      "I go groping, retreating several times, on a single plane.",
+      "Closing my eyes to find volume within me again, I dare a direction.",
+      "The mark is black, curved, damp, with porous contours. I do not trust it yet.",
+      "These edges are blurry and without limit.",
+      "One can detect both my hesitation and the fragmented structure of its support. It is not frank — rotten plank.",
+      "I continue nonetheless. And attempt to firm up my trajectory, to densify the black that guides me, without leaving crusty interstices.",
+      "I must turn back often, go over the same spot to carve the path. With my"
+    ]
   },
-{ // p.9
-    fr:["mine déjà érodée, j'écrase les fibres grasses, les mottes. Je les compacte pour en faire un seul espace bien homogène.","C'est dommage car le papier est maintenant presque sale. Et j'aime les choses nettes, les plans maîtrisés mais là je n'y arrive pas et m'égare.","Je recommence, plus fort, avec un trait devant marquer le bord inférieur, sans lumière. C'est moche, forcé.","Les aspérités du papier sont meurtries. Chaque fibre s'étale sur ces voisines, s'excuse d'avoir été hors de propos, pas à sa place.","Compressées elles ne se mêlent pas mais se surimposent dans un glacis. Poudingue trop érodé, lisse et glissant.","Je grisaille, je charbonne. Mais sortir de son ornière prend du temps, de l'énergie.","Les choses ne se révèlent pas sans effort. Je me dis qu'il faut être"],
-    zh:["已經磨損的筆芯，我壓碎了油膩的纖維、土塊。我把它們壓實，使之成為一個均勻的空間。","可惜的是，紙張現在幾乎已經髒了。我喜歡乾淨的東西、掌控得宜的構圖，但此刻我做不到，我迷失了。","我重新開始，更用力，用一條線標記下緣，沒有光線的地方。很醜，很勉強。","紙張的粗糙被損傷了。每一根纖維攤開在鄰居身上，為自己的不合時宜、不在其位而道歉。","被壓縮的它們並不混合，而是在一層釉面中層層疊加。侵蝕過度的礫岩，光滑而滑溜。","我塗灰色，我塗炭黑。但要走出窠臼需要時間和精力。","事物不會毫不費力地顯現。我告訴自己必須"],
-    en:["already eroded lead, I crush the greasy fibres, the clumps. I compact them to make a single, well-homogeneous space.","It is a pity because the paper is now almost dirty. And I love neat things, controlled plans, but here I cannot manage and lose my way.","I start again, harder, with a stroke meant to mark the lower edge, without light. It is ugly, forced.","The roughness of the paper is bruised. Each fibre spreads over its neighbours, apologising for being out of place.","Compressed, they do not blend but superimpose in a glaze. Pudding stone too eroded, smooth and slippery.","I grey, I char. But getting out of one's rut takes time, energy.","Things do not reveal themselves without effort. I tell myself one must be"]
+  {
+    "fr": [
+      "mine déjà érodée, j'écrase les fibres grasses, les mottes. Je les compacte pour en faire un seul espace bien homogène.",
+      "C'est dommage car le papier est maintenant presque sale. Et j'aime les choses nettes, les plans maîtrisés mais là je n'y arrive pas et m'égare.",
+      "Je recommence, plus fort, avec un trait devant marquer le bord inférieur, sans lumière. C'est moche, forcé.",
+      "Les aspérités du papier sont meurtries. Chaque fibre s'étale sur ces voisines, s'excuse d'avoir été hors de propos, pas à sa place.",
+      "Compressées elles ne se mêlent pas mais se surimposent dans un glacis. Poudingue trop érodé, lisse et glissant.",
+      "Je grisaille, je charbonne. Mais sortir de son ornière prend du temps, de l'énergie.",
+      "Les choses ne se révèlent pas sans effort. Je me dis qu'il faut être"
+    ],
+    "zh": [
+      "已經磨損的筆芯，我壓碎了油膩的纖維、土塊。我把它們壓實，使之成為一個均勻的空間。",
+      "可惜的是，紙張現在幾乎已經髒了。我喜歡乾淨的東西、掌控得宜的構圖，但此刻我做不到，我迷失了。",
+      "我重新開始，更用力，用一條線標記下緣，沒有光線的地方。很醜，很勉強。",
+      "紙張的粗糙被損傷了。每一根纖維攤開在鄰居身上，為自己的不合時宜、不在其位而道歉。",
+      "被壓縮的它們並不混合，而是在一層釉面中層層疊加。侵蝕過度的礫岩，光滑而滑溜。",
+      "我塗灰色，我塗炭黑。但要走出窠臼需要時間和精力。",
+      "事物不會毫不費力地顯現。我告訴自己必須"
+    ],
+    "en": [
+      "already eroded lead, I crush the greasy fibres, the clumps. I compact them to make a single, well-homogeneous space.",
+      "It is a pity because the paper is now almost dirty. And I love neat things, controlled plans, but here I cannot manage and lose my way.",
+      "I start again, harder, with a stroke meant to mark the lower edge, without light. It is ugly, forced.",
+      "The roughness of the paper is bruised. Each fibre spreads over its neighbours, apologising for being out of place.",
+      "Compressed, they do not blend but superimpose in a glaze. Pudding stone too eroded, smooth and slippery.",
+      "I grey, I char. But getting out of one's rut takes time, energy.",
+      "Things do not reveal themselves without effort. I tell myself one must be"
+    ]
   },
-{ // p.10
-    fr:["méthodique, rigoriste, que la voie étroite n'accepte pas les approximations ; je refuse les chambres obscures trop mécanistes et l'impressionnisme trop pointilliste.","Je veux capter l'essence de l'objet sans le réduire à ses limites.","Mais pourquoi ne pas plutôt tolérer l'ambiguïté, le flou voire la subtilité ? Peut-être en jouer et s'y complaire.","Je devrais fermer les yeux.","Ou ne laisser qu'une mince fente de lumière, permissive, troublée par les cils, par le liquide lacrymal soudain concentré entre mes paupières, diffractant les formes, mêlant les lignes et libérant enfin mon imagination.","Ainsi je verrais le monde comme le papier le demande. C'est plus simple.","Trente minutes sont passées déjà."],
-    zh:["有條不紊、嚴格，狹窄的道路不接受近似；我拒絕過於機械化的暗箱和過於點描主義的印象派。","我想捕捉物體的本質，而不將其縮減到極限。","但為什麼不寧可容忍模糊、朦朧甚至精妙呢？也許可以玩味它，並沉浸其中。","我應該閉上眼睛。","或者只留一道細細的光縫，寬容的，被睫毛擾動的，被突然聚集在眼瞼間的淚液折射著形狀，混合著線條，最終釋放我的想像力。","這樣我就能像紙張所要求的那樣看世界。這更簡單。","三十分鐘已經過去了。"],
-    en:["methodical, rigorous, that the narrow path does not accept approximations; I reject camera obscuras too mechanistic and Impressionism too pointillist.","I want to capture the essence of the object without reducing it to its limits.","But why not rather tolerate ambiguity, blur, even subtlety? Perhaps play with it and take pleasure in it.","I should close my eyes.","Or leave only a thin slit of light, permissive, disturbed by the eyelashes, by the lacrimal fluid suddenly concentrated between my eyelids, diffracting the forms, blending the lines and finally freeing my imagination.","Thus I would see the world as the paper demands it. It is simpler.","Thirty minutes have already passed."]
+  {
+    "fr": [
+      "méthodique, rigoriste, que la voie étroite n'accepte pas les approximations ; je refuse les chambres obscures trop mécanistes et l'impressionnisme trop pointilliste.",
+      "Je veux capter l'essence de l'objet sans le réduire à ses limites.",
+      "Mais pourquoi ne pas plutôt tolérer l'ambiguïté, le flou voire la subtilité ? Peut-être en jouer et s'y complaire.",
+      "Je devrais fermer les yeux.",
+      "Ou ne laisser qu'une mince fente de lumière, permissive, troublée par les cils, par le liquide lacrymal soudain concentré entre mes paupières, diffractant les formes, mêlant les lignes et libérant enfin mon imagination.",
+      "Ainsi je verrais le monde comme le papier le demande. C'est plus simple.",
+      "Trente minutes sont passées déjà."
+    ],
+    "zh": [
+      "有條不紊、嚴格，狹窄的道路不接受近似；我拒絕過於機械化的暗箱和過於點描主義的印象派。",
+      "我想捕捉物體的本質，而不將其縮減到極限。",
+      "但為什麼不寧可容忍模糊、朦朧甚至精妙呢？也許可以玩味它，並沉浸其中。",
+      "我應該閉上眼睛。",
+      "或者只留一道細細的光縫，寬容的，被睫毛擾動的，被突然聚集在眼瞼間的淚液折射著形狀，混合著線條，最終釋放我的想像力。",
+      "這樣我就能像紙張所要求的那樣看世界。這更簡單。",
+      "三十分鐘已經過去了。"
+    ],
+    "en": [
+      "methodical, rigorous, that the narrow path does not accept approximations; I reject camera obscuras too mechanistic and Impressionism too pointillist.",
+      "I want to capture the essence of the object without reducing it to its limits.",
+      "But why not rather tolerate ambiguity, blur, even subtlety? Perhaps play with it and take pleasure in it.",
+      "I should close my eyes.",
+      "Or leave only a thin slit of light, permissive, disturbed by the eyelashes, by the lacrimal fluid suddenly concentrated between my eyelids, diffracting the forms, blending the lines and finally freeing my imagination.",
+      "Thus I would see the world as the paper demands it. It is simpler.",
+      "Thirty minutes have already passed."
+    ]
   },
-{ // p.11
-    fr:["Il me reste du temps pour en profiter. Vais-je passer par là où le plaisir naît d'un geste de transgression, d'un élan hors limites, d'une inspiration incontrôlée ?","Je peux maintenant étendre les gestes plus librement, nier mes ratures, aller à l'esquisse comme on va à une vérité, parmi d'autres.","Car après tout chacun voit différemment et pourtant il faut être réaliste et copier ma réalité.","Je pourrais être cette femme en noir là-bas qui dessine le motif d'une corniche rococo, un coquillage serti de volutes végétales.","Ou ce jeune homme un peu sale mais gentil, qui prend le temps face aux feuilles d'olivier qui le toisent de ne rien faire.","Face à moi, la feuille d'acanthe transition est maintenant là, deux fois."],
-    zh:["我還有時間好好享受。我是否要走向那個快樂誕生於僭越之舉、超越界限的衝動、不受控的靈感之處？","我現在可以更自由地伸展動作，否認我的塗改，走向速寫就像走向一個真理，在眾多真理之中。","因為畢竟每個人看到的都不同，然而仍必須寫實，複製我的現實。","我可以是那邊那位穿黑衣的女人，正在描繪一個洛可可簷口的圖案，一枚鑲嵌著植物漩渦的貝殼。","或者是那個有點邋遢但溫和的年輕人，在橄欖葉前不慌不忙，而那些葉子傲慢地看著他什麼也不做。","在我面前，過渡的茛苕葉現在在那裡了，出現了兩次。"],
-    en:["I still have time to make the most of it. Will I pass through where pleasure is born from a gesture of transgression, from an impulse beyond limits, from an uncontrolled inspiration?","I can now extend my gestures more freely, deny my erasures, go to the sketch as one goes to a truth, among others.","For after all everyone sees differently and yet one must be realistic and copy one's reality.","I could be that woman in black over there drawing the motif of a rococo cornice, a shell set with vegetal scrolls.","Or that young man, a bit dirty but kind, who takes his time facing the olive leaves that look down on him for doing nothing.","Before me, the transitional acanthus leaf is now there, twice."]
+  {
+    "fr": [
+      "Il me reste du temps pour en profiter. Vais-je passer par là où le plaisir naît d'un geste de transgression, d'un élan hors limites, d'une inspiration incontrôlée ?",
+      "Je peux maintenant étendre les gestes plus librement, nier mes ratures, aller à l'esquisse comme on va à une vérité, parmi d'autres.",
+      "Car après tout chacun voit différemment et pourtant il faut être réaliste et copier ma réalité.",
+      "Je pourrais être cette femme en noir là-bas qui dessine le motif d'une corniche rococo, un coquillage serti de volutes végétales.",
+      "Ou ce jeune homme un peu sale mais gentil, qui prend le temps face aux feuilles d'olivier qui le toisent de ne rien faire.",
+      "Face à moi, la feuille d'acanthe transition est maintenant là, deux fois."
+    ],
+    "zh": [
+      "我還有時間好好享受。我是否要走向那個快樂誕生於僭越之舉、超越界限的衝動、不受控的靈感之處？",
+      "我現在可以更自由地伸展動作，否認我的塗改，走向速寫就像走向一個真理，在眾多真理之中。",
+      "因為畢竟每個人看到的都不同，然而仍必須寫實，複製我的現實。",
+      "我可以是那邊那位穿黑衣的女人，正在描繪一個洛可可簷口的圖案，一枚鑲嵌著植物漩渦的貝殼。",
+      "或者是那個有點邋遢但溫和的年輕人，在橄欖葉前不慌不忙，而那些葉子傲慢地看著他什麼也不做。",
+      "在我面前，過渡的茛苕葉現在在那裡了，出現了兩次。"
+    ],
+    "en": [
+      "I still have time to make the most of it. Will I pass through where pleasure is born from a gesture of transgression, from an impulse beyond limits, from an uncontrolled inspiration?",
+      "I can now extend my gestures more freely, deny my erasures, go to the sketch as one goes to a truth, among others.",
+      "For after all everyone sees differently and yet one must be realistic and copy one's reality.",
+      "I could be that woman in black over there drawing the motif of a rococo cornice, a shell set with vegetal scrolls.",
+      "Or that young man, a bit dirty but kind, who takes his time facing the olive leaves that look down on him for doing nothing.",
+      "Before me, the transitional acanthus leaf is now there, twice."
+    ]
   },
-{ // p.12
-    fr:["Je ferme les yeux tout à fait et je vois le possible trait qui va suivre le passé.","Les boules de cellulose tombent juste sous mon crayon. Chacune a sa place pour exister en bosse ou en creux.","Je suis les courbes sinusoïdales de la matière, entre vide et plein. Les formes se révèlent d'elles-mêmes, manifestant un monde léger.","La feuille se couvre de taches enchâssées, aux limites métrisables. Je m'affale sur les contours, m'arrête dans un ombrage, y retourne maintes fois, sans gomme, ni estompe.","Ainsi apparaissent l'onctueux, le soyeux, le voluptueux.","Une heure passée.","Prenant du recul, je découvre un ensemble en glacis, un palimpseste de recouvrements ouverts qui"],
-    zh:["我完全閉上眼睛，看見了那條可能的線，它將追隨過去。","纖維素的小球恰好落在我的鉛筆之下。每一個都有自己的位置，以凸起或凹陷的方式存在。","我追隨著物質的正弦曲線，在空與實之間。形態自行顯現，展示出一個輕盈的世界。","紙面覆蓋了鑲嵌的斑點，邊界可以丈量。我趴伏在輪廓上，在一片陰影中停下，反覆回到那裡，沒有橡皮擦，也沒有擦筆。","於是出現了滑潤、絲滑、豐腴。","一個小時過去了。","退後一步，我發現了一個釉面般的整體，一層層敞開的覆蓋形成的重寫本，"],
-    en:["I close my eyes completely and I see the possible line that will follow the past.","The cellulose balls fall just beneath my pencil. Each has its place to exist as a bump or a hollow.","I follow the sinusoidal curves of matter, between void and fullness. The forms reveal themselves, manifesting a light world.","The sheet is covered with embedded marks, with measurable limits. I slump over the contours, pause in a shadow, return there many times, without eraser, nor blending stump.","Thus appear the smooth, the silky, the voluptuous.","One hour passed.","Stepping back, I discover a glazed whole, a palimpsest of open coverings that"]
+  {
+    "fr": [
+      "Je ferme les yeux tout à fait et je vois le possible trait qui va suivre le passé.",
+      "Les boules de cellulose tombent juste sous mon crayon. Chacune a sa place pour exister en bosse ou en creux.",
+      "Je suis les courbes sinusoïdales de la matière, entre vide et plein. Les formes se révèlent d'elles-mêmes, manifestant un monde léger.",
+      "La feuille se couvre de taches enchâssées, aux limites métrisables. Je m'affale sur les contours, m'arrête dans un ombrage, y retourne maintes fois, sans gomme, ni estompe.",
+      "Ainsi apparaissent l'onctueux, le soyeux, le voluptueux.",
+      "Une heure passée.",
+      "Prenant du recul, je découvre un ensemble en glacis, un palimpseste de recouvrements ouverts qui"
+    ],
+    "zh": [
+      "我完全閉上眼睛，看見了那條可能的線，它將追隨過去。",
+      "纖維素的小球恰好落在我的鉛筆之下。每一個都有自己的位置，以凸起或凹陷的方式存在。",
+      "我追隨著物質的正弦曲線，在空與實之間。形態自行顯現，展示出一個輕盈的世界。",
+      "紙面覆蓋了鑲嵌的斑點，邊界可以丈量。我趴伏在輪廓上，在一片陰影中停下，反覆回到那裡，沒有橡皮擦，也沒有擦筆。",
+      "於是出現了滑潤、絲滑、豐腴。",
+      "一個小時過去了。",
+      "退後一步，我發現了一個釉面般的整體，一層層敞開的覆蓋形成的重寫本，"
+    ],
+    "en": [
+      "I close my eyes completely and I see the possible line that will follow the past.",
+      "The cellulose balls fall just beneath my pencil. Each has its place to exist as a bump or a hollow.",
+      "I follow the sinusoidal curves of matter, between void and fullness. The forms reveal themselves, manifesting a light world.",
+      "The sheet is covered with embedded marks, with measurable limits. I slump over the contours, pause in a shadow, return there many times, without eraser, nor blending stump.",
+      "Thus appear the smooth, the silky, the voluptuous.",
+      "One hour passed.",
+      "Stepping back, I discover a glazed whole, a palimpsest of open coverings that"
+    ]
   },
-{ // p.13
-    fr:["forme une image cohérente en son tout et en ses parties.","Une épure, floue mais fidèle au modèle, à mon esprit et à la matière.","C'est un dessin au raffinement localement fini à chaque trait, sur chaque trame.","C'est une fractale floutée par mes doutes.","J'y vois mon désir et mes frustrations se superposer, se répondre en une structure paracompacte."],
-    zh:["構成了一幅在整體和細部上都連貫的影像。","一幅純化的圖，模糊但忠於模型、忠於我的心靈和物質。","這是一幅在每一筆、每一紋理上都達到局部精緻的素描。","這是一個被我的疑慮模糊化的碎形。","我從中看到我的慾望和挫折相互疊加，彼此呼應，形成一個仿緊緻的結構。"],
-    en:["forms a coherent image in its whole and in its parts.","A refined drawing, blurry but faithful to the model, to my mind and to matter.","It is a drawing of refinement locally finished at each stroke, on each weave.","It is a fractal blurred by my doubts.","I see in it my desire and my frustrations superimposing, answering each other in a paracompact structure."]
+  {
+    "fr": [
+      "forme une image cohérente en son tout et en ses parties.",
+      "Une épure, floue mais fidèle au modèle, à mon esprit et à la matière.",
+      "C'est un dessin au raffinement localement fini à chaque trait, sur chaque trame.",
+      "C'est une fractale floutée par mes doutes.",
+      "J'y vois mon désir et mes frustrations se superposer, se répondre en une structure paracompacte."
+    ],
+    "zh": [
+      "構成了一幅在整體和細部上都連貫的影像。",
+      "一幅純化的圖，模糊但忠於模型、忠於我的心靈和物質。",
+      "這是一幅在每一筆、每一紋理上都達到局部精緻的素描。",
+      "這是一個被我的疑慮模糊化的碎形。",
+      "我從中看到我的慾望和挫折相互疊加，彼此呼應，形成一個仿緊緻的結構。"
+    ],
+    "en": [
+      "forms a coherent image in its whole and in its parts.",
+      "A refined drawing, blurry but faithful to the model, to my mind and to matter.",
+      "It is a drawing of refinement locally finished at each stroke, on each weave.",
+      "It is a fractal blurred by my doubts.",
+      "I see in it my desire and my frustrations superimposing, answering each other in a paracompact structure."
+    ]
   },
-{ // p.15
-    fr: ["Le papier est fin, lisse. C'est quasiment le papier bible de la belle littérature, ou celui des tickets de caisse. Ce papier désuet montre l'avenir d'un monde qui disparaît. Sa finesse suffit à le faire sombrer.", "Et les grains microscopiques de sa trame laissent le champ ouvert et fluide comme un lac gelé.", "Des lignes bleues, fines et compactes, s'allongent donc et s'amusent. C'est un liquide suave qui coule vivement sur la cellulose cirée pour y tracer des arabesques, des pattes de mouches, des hiéroglyphes."],
-    zh: ["紙張很薄，很光滑。它幾乎可以說是精美文學的聖經紙，或是收據紙。這篇過時的論文展示了一個正在消失的世界的未來。它的精細程度足以讓它沉下去。", "其框架的微觀顆粒使場域像結冰的湖一樣開放且流動。", "藍色的線條，細而緊湊，因此拉長又有趣。它是一種甜味液體，可在打蠟的纖維素上快速流動，描繪出阿拉伯圖案、蒼蠅腿和象形文字。"],
-    en: ["The paper is thin, smooth. It is almost the bible paper of fine literature, or that of receipts. This outdated paper shows the future of a world that is disappearing. Its finesse is enough to make it sink.", "And the microscopic grains of its frame leave the field open and fluid like a frozen lake.", "Blue lines, thin and compact, therefore lengthen and have fun. It is a sweet liquid which flows quickly on the waxed cellulose to trace arabesques, fly legs, hieroglyphs."]
+  {
+    "fr": [
+      "Le papier est fin, lisse. C'est quasiment le papier bible de la belle littérature, ou celui des tickets de caisse. Ce papier désuet montre l'avenir d'un monde qui disparaît. Sa finesse suffit à le faire sombrer.",
+      "Et les grains microscopiques de sa trame laissent le champ ouvert et fluide comme un lac gelé.",
+      "Des lignes bleues, fines et compactes, s'allongent donc et s'amusent. C'est un liquide suave qui coule vivement sur la cellulose cirée pour y tracer des arabesques, des pattes de mouches, des hiéroglyphes."
+    ],
+    "zh": [
+      "紙張薄而平滑，幾乎像精裝文學書的聖經紙，也像收銀機小票。這種過時的紙質，彷彿在預示一個正在消失的世界；它的纖薄，已足以讓它沉沒。",
+      "而它紋理中的微粒，讓整個場域敞開而流動，像一座結冰的湖。",
+      "細而緊密的藍線於是被拉長、嬉戲。那是一股溫潤的液流，迅速滑過上蠟纖維，留下阿拉伯式曲線、蠅足般筆跡、以及象形般的符號。"
+    ],
+    "en": [
+      "The paper is thin and smooth, almost like bible paper from fine editions, or like cash-register receipts. This old-fashioned stock seems to foreshadow a world that is vanishing; its very delicacy could make it sink.",
+      "And the microscopic grains in its weave leave the field open and fluid, like a frozen lake.",
+      "Thin, compact blue lines then stretch out and play. A supple liquid runs quickly across the waxed cellulose, tracing arabesques, fly-leg marks, and hieroglyphs."
+    ]
   },
-{ // p.16
-    fr: ["Je ne veux pas voir ce qu'il a écrit, de son geste rapide et brouillon, annotant d'une sentence scientifique les chiffres imprimés en colonnes à la surface alors qu'il compte mes abattis, mes cellules, mes secondes.", "Je ne veux pas comprendre, mais l'homme me parle, gentiment, en me tendant la maudite feuille de son sourire bienveillant. Oui, ça va bien se passer, et c'est pour aller mieux.", "Alors je prends la feuille. Douce, suave et presque chaude, je la regarde dans le vide et me lève pour rentrer dans la petite cabine en contreplaqué mélaminé qui fait office d'espace d'intimité.", "J'ai une heure.", "Une heure pour vivre."],
-    zh: ["我不想看他寫的東西，用他快速、凌亂的手勢，用科學句子註釋表面上打印的數字，同時他數著我的內臟、我的細胞、我的秒數。", "我不想明白，但那個男人和藹地對我說話，帶著和善的微笑遞給我那張被詛咒的床單。是的，一切都會順利，而且會變得更好。", "所以我拿著那張紙。柔軟、溫文爾雅、近乎溫暖，我茫然地看著她，起身進入作為隱私空間的三聚氰胺膠合板小艙。", "我有一個小時。", "還能活一小時。"],
-    en: ["I don't want to see what he has written, with his quick, messy gesture, annotating with a scientific sentence the numbers printed in columns on the surface while he counts my giblets, my cells, my seconds.", "I don't want to understand, but the man speaks to me, kindly, handing me the cursed sheet with his kind smile. Yes, it will go well, and it will get better.", "So I take the sheet. Soft, suave and almost warm, I look at her blankly and get up to enter the small melamine plywood cabin which serves as a privacy space.", "I have an hour.", "One hour to live."]
+  {
+    "fr": [
+      "Je ne veux pas voir ce qu'il a écrit, de son geste rapide et brouillon, annotant d'une sentence scientifique les chiffres imprimés en colonnes à la surface alors qu'il compte mes abattis, mes cellules, mes secondes.",
+      "Je ne veux pas comprendre, mais l'homme me parle, gentiment, en me tendant la maudite feuille de son sourire bienveillant. Oui, ça va bien se passer, et c'est pour aller mieux.",
+      "Alors je prends la feuille. Douce, suave et presque chaude, je la regarde dans le vide et me lève pour rentrer dans la petite cabine en contreplaqué mélaminé qui fait office d'espace d'intimité.",
+      "J'ai une heure.",
+      "Une heure pour vivre."
+    ],
+    "zh": [
+      "我不想看他寫了什麼。那個急促而潦草的手勢，在表面的欄位數字旁註下科學式的判語，同時計算著我的臟腑、我的細胞、我的秒數。",
+      "我不想懂，但那男人仍溫和地對我說話，帶著善意的笑，把那張該死的紙遞給我。是的，一切都會順利，這是為了讓情況變好。",
+      "於是我接過那張紙。柔軟、溫潤、幾乎帶著體溫。我茫然看著它，起身走進那間貼著美耐板膠合板的小隔間，僅供短暫的私密。",
+      "我有一小時。",
+      "一小時用來活著。"
+    ],
+    "en": [
+      "I do not want to see what he wrote: that quick, messy gesture, adding a scientific verdict to the numbers printed in columns while he counts my organs, my cells, my seconds.",
+      "I do not want to understand, yet the man speaks gently, handing me the damned sheet with a kindly smile. Yes, it will go well, and it is meant to make things better.",
+      "So I take the sheet. Soft, smooth, almost warm. I stare into the void, then stand and step into the small melamine-faced plywood cubicle that serves as a space of intimacy.",
+      "I have one hour.",
+      "One hour to live."
+    ]
   },
-{ // p.17
-    fr: ["Assis sur la moleskine grise, entouré de pastels d'eau et prune, je reste, aiguille plantée, les yeux fixés sur la feuille maintenant posée sur la tablette à ma droite, à côté des flacons et des compresses ouatées.", "Il s'absente et j'y vois que le corps se déverse sur lui-même, s'étouffe à force de produire, de se consumer. Ses fibres se concentrent, s'épanouissent, envahissent l'espace, le saturent jusqu'à n'offrir aucune perspective, devenir un aplat sombre, univoque et fatidique.", "Une boule d'énergie vitale se déverse et tache tout, mange tout. C'est le grand banquet intérieur autophage.", "Cela fait six mois que ce festin a commencé. Au début j'avais de l'appétit et la foi. Maintenant..."],
-    zh: ["我坐在灰色的鼴鼠皮上，周圍是水和紫紅色的粉彩，我留下來，針扎著，眼睛盯著現在放在我右邊架子上的床單，旁邊是瓶子和化妝棉。", "他缺席了，我看到身體正在湧入自身，因生產和消耗而窒息。它的纖維集中、茂盛、侵入空間，使空間飽和，直到它們無法提供任何視角，成為一個黑暗、明確和致命的平面。", "一團生命能量傾瀉而出，玷污一切，吞噬一切。這是一場偉大的自噬內部盛宴。", "距離這場盛宴開始已有六個月了。起初我有胃口和信心。現在..."],
-    en: ["Sitting on the gray moleskin, surrounded by water and plum pastels, I remain, needle planted, eyes fixed on the sheet now placed on the shelf to my right, next to the bottles and cotton pads.", "He is absent and I see that the body is pouring into itself, suffocating from producing, from consuming. Its fibers concentrate, flourish, invade the space, saturating it until they offer no perspective, becoming a dark, unambiguous and fateful flat surface.", "A ball of vital energy pours out and stains everything, eats everything. It is the great autophagic interior banquet.", "It's been six months since this feast began. At first I had appetite and faith. NOW..."]
+  {
+    "fr": [
+      "Assis sur la moleskine grise, entouré de pastels d'eau et prune, je reste, aiguille plantée, les yeux fixés sur la feuille maintenant posée sur la tablette à ma droite, à côté des flacons et des compresses ouatées.",
+      "Il s'absente et j'y vois que le corps se déverse sur lui-même, s'étouffe à force de produire, de se consumer. Ses fibres se concentrent, s'épanouissent, envahissent l'espace, le saturent jusqu'à n'offrir aucune perspective, devenir un aplat sombre, univoque et fatidique.",
+      "Une boule d'énergie vitale se déverse et tache tout, mange tout. C'est le grand banquet intérieur autophage.",
+      "Cela fait six mois que ce festin a commencé. Au début j'avais de l'appétit et la foi. Maintenant..."
+    ],
+    "zh": [
+      "我坐在灰色人造革上，四周是淡水色與梅紫色的粉彩；針仍扎在身上，目光固定在那張如今放在右手小台上的紙，旁邊擺著藥瓶與棉紗墊。",
+      "他離開後，我看見身體正向自身傾瀉，因不斷生成又不斷燃耗而窒息。纖維聚攏、鼓脹、侵入空間，把它塞滿，直到再沒有透視，只剩一塊幽暗、單一、宿命的平面。",
+      "一團生命能量傾瀉而下，玷污一切，也吞噬一切。那是體內一場巨大的自噬盛宴。",
+      "這場盛宴已持續六個月。起初我還有食慾，也有信念。現在……"
+    ],
+    "en": [
+      "Seated on the gray moleskine, surrounded by pale aqua and plum tones, I remain there, needle in me, eyes fixed on the sheet now set on the ledge to my right, beside vials and cotton pads.",
+      "When he leaves, I see the body pouring into itself, choking on its own production, consuming itself. Its fibers tighten, swell, invade space, saturate it until no perspective remains: only a dark, single, fated plane.",
+      "A ball of vital energy spills out, stains everything, devours everything. It is the great autophagic banquet within.",
+      "This feast has been going on for six months. At first I had appetite and faith. Now..."
+    ]
   },
-{ // p.18
-    fr: ["Je suis obèse, glouton de moi-même. Mes chairs grasses évoluent comme sous la poussée d'une orogenèse.", "Le rift du nez apparaît alors que mon crâne ressemble à une plaine arasée, sèche. Des boues de peau s'accumulent plus bas, aux commissures, créant un marais. De grandes failles s'écartèlent, vidant des réservoirs de peine, cassant les chairs, les sourires.", "Je suis un paysage cubiste, post-tremblement de terre. On dit parfois de quelqu'un qu'il a pris un coup de vieux. Et c'est vrai, nos corps vieillissent par à-coups.", "Alors que le changement est infinitésimal pendant des mois, des années, que nous sommes constants ou presque au rythme des nuits blanches, des beuveries, des vacances ensoleillées ou des hivers trop laborieux, parfois le temps s'accélère."],
-    zh: ["我很胖，對自己很貪吃。我的肥肉就像是在造山運動的壓力下進化出來的。", "鼻子出現裂痕，而我的頭骨看起來像平坦、乾燥的平原。皮膚污泥在角落處積聚，形成沼澤。巨大的斷層線被撕裂，排空了痛苦的儲存庫，打破了肉體和微笑。", "我是一幅地震後的立體派風景畫。我們有時會說某人正在變老。確實，我們的身體會突然變老。", "雖然幾個月、幾年的變化是無限小的，而且我們總是或幾乎處於不眠之夜、飲酒聚會、陽光明媚的假期或過度勞累的冬天的節奏中，但有時時間會加速。"],
-    en: ["I'm obese, a glutton for myself. My fatty flesh evolves as if under the pressure of an orogeny.", "The nose rift appears while my skull looks like a flat, dry plain. Skin sludge accumulates lower down, at the corners, creating a swamp. Great fault lines are torn apart, emptying reservoirs of pain, breaking flesh and smiles.", "I am a cubist landscape, post-earthquake. We sometimes say that someone is getting old. And it’s true, our bodies age in spurts.", "While the change is infinitesimal over months, years, and we are constant or almost at the rhythm of sleepless nights, drinking parties, sunny vacations or overly laborious winters, sometimes time speeds up."]
+  {
+    "fr": [
+      "Je suis obèse, glouton de moi-même. Mes chairs grasses évoluent comme sous la poussée d'une orogenèse.",
+      "Le rift du nez apparaît alors que mon crâne ressemble à une plaine arasée, sèche. Des boues de peau s'accumulent plus bas, aux commissures, créant un marais. De grandes failles s'écartèlent, vidant des réservoirs de peine, cassant les chairs, les sourires.",
+      "Je suis un paysage cubiste, post-tremblement de terre. On dit parfois de quelqu'un qu'il a pris un coup de vieux. Et c'est vrai, nos corps vieillissent par à-coups.",
+      "Alors que le changement est infinitésimal pendant des mois, des années, que nous sommes constants ou presque au rythme des nuits blanches, des beuveries, des vacances ensoleillées ou des hivers trop laborieux, parfois le temps s'accélère."
+    ],
+    "zh": [
+      "我肥腫，貪婪地吞食自己。我的脂肉像在造山運動的推擠下變形。",
+      "鼻樑的裂谷浮現，而我的頭顱像被剷平的乾地。更下方，皮膚淤泥在嘴角處堆積成沼澤；巨大的裂隙張開，抽空痛苦的蓄水池，撕裂血肉，也撕裂笑容。",
+      "我是一幅震後的立體派風景。人們有時說某人一夕變老。確實，我們的身體是跳躍式地老去。",
+      "變化在數月、數年間原本細微得幾乎不可見；我們隨著失眠夜、酒宴、陽光假期和艱難冬季的節奏幾乎維持不變。可有時，時間突然加速。"
+    ],
+    "en": [
+      "I am obese, gluttonous for myself. My fatty flesh shifts as if under the pressure of an orogeny.",
+      "A rift appears in my nose while my skull looks like a leveled, arid plain. Lower down, skin-mud gathers at the corners, making a marsh. Great fissures split open, draining reservoirs of grief, breaking flesh and smiles.",
+      "I am a cubist landscape after an earthquake. We sometimes say someone has suddenly aged. It is true: our bodies age in jolts.",
+      "For months, for years, change is infinitesimal; we remain almost constant to the rhythm of sleepless nights, drinking bouts, sunny holidays, and overworked winters. Then sometimes time accelerates."
+    ]
   },
-{ // p.19
-    fr: ["Certaines personnes ont les cheveux gris d'un seul coup à la suite d'un trauma, d'une grande peur. Quelques secondes ont suffi pour perdre mes cheveux, mon visage, mon avenir. Je vois le temps sauter des espaces infinis et tout arracher sur son passage.", "Pourtant on mesure le mal en millimètres, en plus, ou rarement en moins. Des détails à la marge, asymptotiques et asymptomatiques. On date le mal pour tenter de l'insérer dans un espace-temps qui serait maîtrisable.", "Pointer le début de la maladie, tirer un vecteur et trouver notre fin.", "Mais lui est infini, immortel.", "Sur la petite feuille de papier bible, toujours posée au même endroit au fil des séances, toujours aussi incompréhensible qu'une messe en latin ou qu'une cérémonie vaudoue..."],
-    zh: ["有些人在受到創傷或極度恐懼後突然出現白髮。幾秒鐘就足以失去我的頭髮、我的臉、我的未來。我看到時間在無限的空間中跳躍並撕裂其路徑上的一切。", "然而，我們衡量邪惡的單位是毫米，或多或少。細節在邊緣，漸近和無症狀。我們與邪惡約會，試圖將其插入一個可控的時空。", "指向疾病的起點，畫出一個向量並找到我們的終點。", "但祂是無限的、不朽的。", "在小張聖經紙上，在整個會議期間總是放在同一個地方，總是像拉丁彌撒或伏都教儀式一樣難以理解......"],
-    en: ["Some people suddenly have gray hair following trauma or great fear. A few seconds were enough to lose my hair, my face, my future. I see time jumping infinite spaces and tearing away everything in its path.", "Yet we measure evil in millimeters, more, or rarely less. Details at the margins, asymptotic and asymptomatic. We date evil in an attempt to insert it into a space-time that would be controllable.", "Point to the beginning of the disease, draw a vector and find our end.", "But he is infinite, immortal.", "On the small sheet of Bible paper, always placed in the same place throughout the sessions, always as incomprehensible as a Latin mass or a voodoo ceremony..."]
+  {
+    "fr": [
+      "Certaines personnes ont les cheveux gris d'un seul coup à la suite d'un trauma, d'une grande peur. Quelques secondes ont suffi pour perdre mes cheveux, mon visage, mon avenir. Je vois le temps sauter des espaces infinis et tout arracher sur son passage.",
+      "Pourtant on mesure le mal en millimètres, en plus, ou rarement en moins. Des détails à la marge, asymptotiques et asymptomatiques. On date le mal pour tenter de l'insérer dans un espace-temps qui serait maîtrisable.",
+      "Pointer le début de la maladie, tirer un vecteur et trouver notre fin.",
+      "Mais lui est infini, immortel.",
+      "Sur la petite feuille de papier bible, toujours posée au même endroit au fil des séances, toujours aussi incompréhensible qu'une messe en latin ou qu'une cérémonie vaudoue..."
+    ],
+    "zh": [
+      "有些人會在一次創傷、一次極度恐懼後，瞬間白頭。短短幾秒，我就失去了頭髮、臉、還有未來。我看見時間跨越無限空間，把路徑上的一切連根拔起。",
+      "然而，我們仍以毫米丈量病灶，通常是增加，偶爾才減少。那些在邊緣的細節，漸近、也無症狀。我們替病痛標記日期，想把它塞進一個可被掌控的時空。",
+      "指出疾病的起點，畫出一個向量，再推算我們的終點。",
+      "可它本身，無限，不朽。",
+      "那張薄薄的聖經紙，在每次療程裡總放在同一處，依然像拉丁彌撒或伏都儀式一樣難懂……"
+    ],
+    "en": [
+      "Some people go gray all at once after trauma, after a great fright. A few seconds were enough for me to lose my hair, my face, my future. I see time leap across infinite spaces and tear away everything in its path.",
+      "Yet we measure illness in millimeters, usually more, rarely less. Marginal details, asymptotic and asymptomatic. We date the evil in order to insert it into a space-time we might master.",
+      "Mark the onset of disease, draw a vector, and locate our end.",
+      "But it is infinite, immortal.",
+      "On the thin bible paper, always set in the same place from one session to the next, it remains as opaque as a Latin mass or a voodoo rite..."
+    ]
   },
-{ // p.20
-    fr: ["Je vois mon ex-voto dérisoire dans ce SAS administratif. Je perds la grande bataille pour l'espace de vie. Sur ma peau de chagrin, il n'y a plus de place.", "Trente minutes passées.", "À droite, un miroir me regarde. Je suis laid mais ma bouche déformée est un demi-sourire permanent. Ce rictus constant m'a transformé en monstre, je pense.", "En 2013 j'ai appris ce beau mot : le rhynophyma, acné rosacée. C'est une déformation ponctuelle du nez qui repousse de manière grotesque les limites du corps, une légère altération de la couleur de la peau, c'est une première métamorphose des cellules, non pathologique, à la limite du comique.", "Mais finalement c'est grave. Il faut amputer."],
-    zh: ["我在這個行政 SAS 中看到了微不足道的投票權。我正在失去生存空間的偉大鬥爭。我破損的皮膚上已經沒有空間了。", "三十分鐘過去了。", "右邊有一面鏡子看著我。我很醜，但我那扭曲的嘴卻永遠掛著半微笑。我想，這種持續不斷的冷笑讓我變成了一個怪物。", "2013年，我學到了這個美麗的字：鼻贅、酒渣鼻。這是鼻子的精確變形，以怪誕的方式推動身體的極限，皮膚顏色的輕微變化，這是細胞的第一次變形，非病態的，近乎滑稽的。", "但最終還是很嚴重。必須截肢。"],
-    en: ["I see my paltry ex-voto in this administrative SAS. I am losing the great battle for living space. There is no more room on my broken skin.", "Thirty minutes gone.", "On the right, a mirror looks at me. I'm ugly but my distorted mouth is a permanent half-smile. This constant sneer turned me into a monster, I think.", "In 2013 I learned this beautiful word: rhynophyma, acne rosacea. It is a punctual deformation of the nose which pushes the limits of the body in a grotesque manner, a slight alteration in the color of the skin, it is a first metamorphosis of the cells, non-pathological, bordering on the comical.", "But ultimately it's serious. It is necessary to amputate."]
+  {
+    "fr": [
+      "Je vois mon ex-voto dérisoire dans ce SAS administratif. Je perds la grande bataille pour l'espace de vie. Sur ma peau de chagrin, il n'y a plus de place.",
+      "Trente minutes passées.",
+      "À droite, un miroir me regarde. Je suis laid mais ma bouche déformée est un demi-sourire permanent. Ce rictus constant m'a transformé en monstre, je pense.",
+      "En 2013 j'ai appris ce beau mot : le rhynophyma, acné rosacée. C'est une déformation ponctuelle du nez qui repousse de manière grotesque les limites du corps, une légère altération de la couleur de la peau, c'est une première métamorphose des cellules, non pathologique, à la limite du comique.",
+      "Mais finalement c'est grave. Il faut amputer."
+    ],
+    "zh": [
+      "我在這道行政程序的氣閘裡，看見自己那可憐的奉獻物。我正輸掉生存空間的大戰。我的身體像《驢皮》般越縮越小，已經沒有餘地。",
+      "三十分鐘過去。",
+      "右邊，一面鏡子盯著我。我很醜，而變形的嘴長成了半個永久微笑。我想，這張持續抽搐的表情，已把我變成怪物。",
+      "2013 年我學到一個漂亮的詞：rhinophyma（酒糟鼻性鼻贅）。那是鼻部局部畸變，以怪誕方式把身體邊界往外推；皮膚顏色略變，像是細胞的第一次變形，未必病理，幾近滑稽。",
+      "但說到底，這很嚴重。必須切除。"
+    ],
+    "en": [
+      "In this administrative airlock, I see my pitiful ex-voto. I am losing the great battle for living space. My very skin, like Balzac's shrinking shagreen, has no room left.",
+      "Thirty minutes have passed.",
+      "To my right, a mirror watches me. I am ugly, and my deformed mouth has become a permanent half-smile. That constant rictus has turned me into a monster, I think.",
+      "In 2013 I learned this beautiful word: rhinophyma, rosacea acne. A localized deformation of the nose that grotesquely pushes outward the limits of the body; a slight shift in skin color; a first metamorphosis of cells, not yet pathological, almost comic.",
+      "But in the end it is serious. Something must be cut away."
+    ]
   },
-{ // p.21
-    fr: ["Donc en 2014 je porte un nez rouge en mousse pour me cacher. Parfois le vide fait son apparition ; un sparadrap ridiculement petit pour combler le trou. Le trait du dessin qui s'infléchit sur le profil.", "On distingue alors également les premières traces sur le cou et les nouvelles déformations de la lèvre supérieure.", "Je me suis toujours considéré comme un homme beau, image renvoyée par les autres. Cette déchéance est d'autant plus difficile, du bel homme bien conservé à la conservation de soi-même. L'espace se déforme et je deviens polymorphe.", "À partir de cette époque j'ai toujours un miroir sur moi. Sans cette réassurance, impossible de poursuivre mon chemin dans l'espace social.", "Je ne veux pas être un monstre. Je veux encore, à la limite, rester parmi les autres."],
-    zh: ["所以2014年我戴上了紅色泡沫鼻子來隱藏。有時會出現空虛；用來填補這個洞的小得可笑的石膏。在輪廓上變形的繪圖線。", "然後我們還可以看到頸部的第一個痕跡和上唇的新變形。", "我一直認為自己是個英俊的男人，是別人眼中的一個形象。這衰退更是難上加難，從保存完好的帥哥到保存自己。空間扭曲，我變得多態。", "從那時起，我的身邊就一直帶著一面鏡子。沒有這個保證，我就不可能在社會空間繼續我的道路。", "我不想成為怪物。最終，我仍然想留在其他人中。"],
-    en: ["So in 2014 I wear a red foam nose to hide. Sometimes the void appears; a ridiculously small plaster to fill the hole. The line of the drawing which is inflected on the profile.", "We can then also see the first marks on the neck and the new deformations of the upper lip.", "I have always considered myself a handsome man, an image reflected by others. This decline is all the more difficult, from the well-preserved handsome man to the preservation of oneself. Space distorts and I become polymorphous.", "From that time on I always have a mirror with me. Without this reassurance, it is impossible to continue my path in the social space.", "I don't want to be a monster. I still want, ultimately, to stay among the others."]
+  {
+    "fr": [
+      "Donc en 2014 je porte un nez rouge en mousse pour me cacher. Parfois le vide fait son apparition ; un sparadrap ridiculement petit pour combler le trou. Le trait du dessin qui s'infléchit sur le profil.",
+      "On distingue alors également les premières traces sur le cou et les nouvelles déformations de la lèvre supérieure.",
+      "Je me suis toujours considéré comme un homme beau, image renvoyée par les autres. Cette déchéance est d'autant plus difficile, du bel homme bien conservé à la conservation de soi-même. L'espace se déforme et je deviens polymorphe.",
+      "À partir de cette époque j'ai toujours un miroir sur moi. Sans cette réassurance, impossible de poursuivre mon chemin dans l'espace social.",
+      "Je ne veux pas être un monstre. Je veux encore, à la limite, rester parmi les autres."
+    ],
+    "zh": [
+      "於是 2014 年，我戴上紅色泡棉鼻子把自己藏起來。有時空洞會露出來；只好用一塊可笑地小的膠布去補。像畫線一樣，輪廓在側臉上折轉。",
+      "接著，頸部最初的痕跡與上唇新的變形也逐漸可見。",
+      "我一直把自己當成好看的男人，那是他人回望給我的形象。於是這種墜落更難承受：從「保養得宜的俊朗」到「只能勉強維持自我」。空間扭曲，而我變得多形。",
+      "從那時起，我總帶著一面鏡子。沒有這份再確認，我就無法在社會空間裡繼續前行。",
+      "我不想成為怪物。至少，我還想留在人群之中。"
+    ],
+    "en": [
+      "So in 2014 I wear a red foam nose to hide. Sometimes the void appears; a ridiculously small bandage tries to fill the hole. The line of the drawing bends along the profile.",
+      "Then the first traces on the neck, and new deformations of the upper lip, become visible as well.",
+      "I had always thought of myself as a handsome man, an image returned to me by others. That is why this decline is harder to bear: from the well-kept handsome man to the mere preservation of self. Space warps, and I become polymorphous.",
+      "From that period on I always carry a mirror. Without that reassurance, I cannot continue my path through social space.",
+      "I do not want to be a monster. At the very least, I still want to remain among others."
+    ]
   },
-{ // p.22
-    fr: ["Une heure passée, je ferme les yeux sur ma douleur.", "Une douleur blanche, sur une page blanche. Du rouge à l'intérieur des formes. Du noir à l'intérieur du rouge.", "De la douleur invisible à la douleur visible, des larmes, des pleurs, et de l'enserrement, l'enserrement du cerveau.", "Se sentir « hors norme » physiquement. Et dans son expression, le regard de l'autre gênant.", "Une peur, un recul... Une douleur qui se diffuse.", "Elle évolue. Elle rentre dans le système sanguin.", "Elle se matérialise en points noirs.", "Du blanc pour faire disparaître les points noirs. Le noir devient gris, plus doux.", "Une autre douleur apparaît, avec la possibilité de reformer un beau cerveau bien rempli.", "Remettre du blanc en épaisseur, un blanc qui représente..."],
-    zh: ["一個小時後，我閉上眼睛，不去理會我的痛苦。", "白色的頁面上有白色的疼痛。形狀內部呈紅色。紅里黑。", "從看不見的痛到看得見的痛，從流淚，從哭泣，從緊繃，大腦緊繃。", "身體上感覺「不正常」。而在他的表情中，對方的神情卻是一臉的尷尬。", "恐懼，退縮……蔓延的痛苦。", "它不斷發展。它進入血液系統。", "它以黑點的形式顯現。", "白色可以讓黑頭消失。黑色變成灰色，更柔和。", "另一種痛苦出現了，伴隨著重塑美麗、充實的大腦的可能性。", "加入濃濃的白色，一種代表…的白色。"],
-    en: ["An hour later, I close my eyes to my pain.", "A white pain, on a white page. Red inside the shapes. Black inside red.", "From invisible pain to visible pain, from tears, from crying, and from the tightness, the tightness of the brain.", "Feeling “out of the norm” physically. And in his expression, the look of the other person is embarrassing.", "A fear, a retreat... A pain that spreads.", "It evolves. It enters the blood system.", "It materializes in black dots.", "White to make blackheads disappear. Black becomes gray, softer.", "Another pain appears, with the possibility of reforming a beautiful, well-filled brain.", "Add thick white, a white that represents..."]
+  {
+    "fr": [
+      "Une heure passée, je ferme les yeux sur ma douleur.",
+      "Une douleur blanche, sur une page blanche. Du rouge à l'intérieur des formes. Du noir à l'intérieur du rouge.",
+      "De la douleur invisible à la douleur visible, des larmes, des pleurs, et de l'enserrement, l'enserrement du cerveau.",
+      "Se sentir « hors norme » physiquement. Et dans son expression, le regard de l'autre gênant.",
+      "Une peur, un recul... Une douleur qui se diffuse.",
+      "Elle évolue. Elle rentre dans le système sanguin.",
+      "Elle se matérialise en points noirs.",
+      "Du blanc pour faire disparaître les points noirs. Le noir devient gris, plus doux.",
+      "Une autre douleur apparaît, avec la possibilité de reformer un beau cerveau bien rempli.",
+      "Remettre du blanc en épaisseur, un blanc qui représente..."
+    ],
+    "zh": [
+      "一小時過去，我闔上眼，對著我的痛。",
+      "白色的痛，在白色頁面上。紅在形體裡，黑在紅裡。",
+      "從不可見的痛到可見的痛：眼淚、哭聲，還有緊箍般的壓迫，大腦被箍緊。",
+      "身體上感到自己「不合常模」。而在表情裡，別人的目光令人難堪。",
+      "恐懼，退縮……疼痛開始擴散。",
+      "它在演變。它滲入血液系統。",
+      "它具象成一點點黑斑。",
+      "再用白色去抹掉黑點。黑轉成灰，更柔和。",
+      "另一種痛浮現，同時帶來重塑一顆飽滿、完好的腦的可能。",
+      "重新加上厚厚的白，一種象徵著……的白。"
+    ],
+    "en": [
+      "An hour passes; I close my eyes over my pain.",
+      "A white pain on a white page. Red inside the forms. Black inside the red.",
+      "From invisible pain to visible pain: tears, sobs, and constriction, the brain tightening in its grip.",
+      "To feel physically \"out of norm.\" And in expression, to meet the other's awkward gaze.",
+      "A fear, a recoil... A pain that spreads.",
+      "It evolves. It enters the bloodstream.",
+      "It materializes as black points.",
+      "White to erase the black points. Black turns gray, softer.",
+      "Another pain appears, and with it the possibility of rebuilding a beautiful, full brain.",
+      "To lay white down in thickness again, a white that stands for..."
+    ]
   },
-{ // p.23
-    fr: ["L'épibux qui entoure les cellules cancéreuses.", "Comme un jeu de go, il encercle le cancer et il le soulage.", "Il apaise. Il neutralise le cancer.", "Il y a aussi le Taxol et le carboplatine en points d'impact jaunes qui se substituent au cancer en transparence, du rose.", "Et l'apparition d'un animal, qui s'interroge, qui cherche... Il cherche le salut, il cherche sa route, il est un peu perdu.", "Il a presque les couleurs du cerveau. Il cherche du blanc et il va trouver du blanc, et du jaune ensuite. Il cherche la guérison.", "D'instinct il le sent et il trouve tout seul.", "De la douleur à la guérison, de la douleur à l'apaisement."],
-    zh: ["癌細胞周圍的表皮細胞。", "就像圍棋一樣，它包圍著癌症並緩解它。", "它可以舒緩。它可以中和癌症。", "黃色衝擊點還含有紫杉醇和卡鉑，它們取代了透明粉紅色的癌症。", "還有動物的出現，它質疑自己，尋求…它尋求救贖，它尋找自己的道路，它有點迷失。", "他幾乎擁有大腦的顏色。他尋找白色，他會找到白色，然後是黃色。他尋求治愈。", "他本能地感覺到它並為自己找到它。", "從痛苦到治愈，從痛苦到緩解。"],
-    en: ["The epibux that surrounds cancer cells.", "Like a game of go, it surrounds the cancer and relieves it.", "It soothes. It neutralizes cancer.", "There is also Taxol and carboplatin in yellow impact points which replace cancer in transparent, pink.", "And the appearance of an animal, which questions itself, which seeks... It seeks salvation, it seeks its way, it is a little lost.", "He almost has the colors of the brain. He looks for white and he will find white, and then yellow. He seeks healing.", "Instinctively he feels it and he finds it for himself.", "From pain to healing, from pain to relief."]
+  {
+    "fr": [
+      "L'épibux qui entoure les cellules cancéreuses.",
+      "Comme un jeu de go, il encercle le cancer et il le soulage.",
+      "Il apaise. Il neutralise le cancer.",
+      "Il y a aussi le Taxol et le carboplatine en points d'impact jaunes qui se substituent au cancer en transparence, du rose.",
+      "Et l'apparition d'un animal, qui s'interroge, qui cherche... Il cherche le salut, il cherche sa route, il est un peu perdu.",
+      "Il a presque les couleurs du cerveau. Il cherche du blanc et il va trouver du blanc, et du jaune ensuite. Il cherche la guérison.",
+      "D'instinct il le sent et il trouve tout seul.",
+      "De la douleur à la guérison, de la douleur à l'apaisement."
+    ],
+    "zh": [
+      "那層包圍癌細胞的「épibux」。",
+      "像圍棋一樣，它把癌症圍住，也減輕它。",
+      "它安撫。它中和癌症。",
+      "還有紫杉醇與卡鉑：一個個黃色衝擊點，在透明層裡替代癌灶，泛著粉紅。",
+      "還有一隻動物的出現，它自問、它尋找……它尋找得救，尋找路徑，有些迷失。",
+      "它幾乎帶著腦的顏色。它找白色，接著會找到白，再找到黃。它在尋找痊癒。",
+      "它憑直覺感到，並且自己找到答案。",
+      "從疼痛到痊癒，從疼痛到安撫。"
+    ],
+    "en": [
+      "The \"épibux\" that surrounds cancer cells.",
+      "Like in the game of go, it encircles the cancer and eases it.",
+      "It calms. It neutralizes the cancer.",
+      "There is also Taxol and carboplatin: yellow impact points that replace the cancer in transparency, in pink.",
+      "And the appearance of an animal, questioning, searching... It seeks salvation, seeks its path, somewhat lost.",
+      "It almost carries the colors of the brain. It seeks white, and it will find white, then yellow. It seeks healing.",
+      "By instinct it senses and finds it on its own.",
+      "From pain to healing, from pain to soothing."
+    ]
   }
 ];
 
